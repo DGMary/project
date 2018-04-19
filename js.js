@@ -2,19 +2,8 @@
 	return(
  {
 	name : name , 
-	ingredients : 
-	[
-		{name: "cheese", price: 5},
-		{name: "tomato", price: 3},
-		{name: "meet", price: 8},
-		{name: "fish", price: 10}
-	],
-	size :
-	{
-		small: { name : "small" , price : 50} ,
-		medium: {name : "medium" , price : 100} ,
-		big: {name : "big" , price : 150  }
-	},
+	ingredients : ingredients,
+	size :	size,
 
 	getPrice : function (){
 		return(this.name );
@@ -39,3 +28,15 @@
 
 // https://git-scm.com/
 // https://git-scm.com/book/ru/v2
+const sizes = [{
+	name : "small" ,
+	price : 7
+} , 
+{
+	name : "medium" ,
+	price : 12
+},
+{
+	name : "big" ,
+	price : 15
+}];
