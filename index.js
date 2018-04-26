@@ -97,5 +97,18 @@ var spiderMan = Object.create(hero);
 spiderMan.name = "Super Man";
 
 
+function makePizza(name , price){
+	return {
+		name : name ,
+		getPrice : function(){
+			return price;
+		}
+	}
+}
 
-console.log(arrayClone (deepArray));
+hero.isPrototypeOf(spiderMan);
+console.log(Array.prototype.isPrototypeOf([]));//проверка на массив?
+console.log(Object.prototype.isPrototypeOf([]));
+
+
+
