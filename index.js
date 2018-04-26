@@ -41,6 +41,22 @@ function cloneArray (arr){
 }
 
 
+//map
+var arr = [{
+	id : 1,
+	name : "test"
+},{
+	id : ,
+	name : "test2"
+}]
+
+var nameList = arr.map(function(item ){
+	return {
+		id : item.id,
+		name : item.name
+	}
+})
+
 
 
 console.log(arrayClone (deepArray));
