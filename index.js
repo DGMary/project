@@ -73,6 +73,29 @@ var nameList1 = arr.filter(function(item ){
 })
 console.log(nameList1);
 
+//sort
+var arr3 = [1 , 2, 5, 8, 4]
+
+var nameList3 = arr3.sort(function(a , b ){
+	return a > b;
+})
+console.log(nameList3);
+
+
+//prototype
+
+var hero = {
+	name : "Hero!",
+	speak :  function(){
+	console.log(this.name);
+	}
+}
+hero.name;
+hero.speak();
+
+var spiderMan = Object.create(hero);
+spiderMan.name = "Super Man";
+
 
 
 console.log(arrayClone (deepArray));
