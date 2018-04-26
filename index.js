@@ -95,20 +95,30 @@ hero.speak();
 
 var spiderMan = Object.create(hero);
 spiderMan.name = "Super Man";
-
-
-function makePizza(name , price){
-	return {
-		name : name ,
-		getPrice : function(){
-			return price;
-		}
-	}
-}
-
 hero.isPrototypeOf(spiderMan);
 console.log(Array.prototype.isPrototypeOf([]));//проверка на массив?
 console.log(Object.prototype.isPrototypeOf([]));
+
+// var  pizzaPrototype = {
+// 	return ({
+// 		getName : function(){
+// 			return this.name;
+// 		},
+// 		getPrice : function(){
+// 			return this.price;
+// 		}
+// 		getIngridients : function(){
+// 			return this.ingridients.join(" , ");
+// 		});
+
+// 	}
+// }
+
+var margarita = Object.create(pizzaPrototype);
+margarita.name = "margarita";
+margarita.ingridients = [ "cheese" , "tomato" , "basil"];
+margarita.price = 5;
+console.log(margarita.getIngridients())
 
 
 
