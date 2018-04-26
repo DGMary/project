@@ -46,7 +46,7 @@ var arr = [{
 	id : 1,
 	name : "test"
 },{
-	id : ,
+	id : 2 ,
 	name : "test2"
 }]
 
@@ -55,7 +55,23 @@ var nameList = arr.map(function(item ){
 		id : item.id,
 		name : item.name
 	}
+});
+console.log(nameList);
+
+
+//filter
+var arr = [{
+	id : 1,
+	name : "test"
+},{
+	id : 3,
+	name : "test2"
+}]
+
+var nameList1 = arr.filter(function(item ){
+	return true;
 })
+console.log(nameList1);
 
 
 
