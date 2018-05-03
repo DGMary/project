@@ -120,5 +120,51 @@ margarita.ingridients = [ "cheese" , "tomato" , "basil"];
 margarita.price = 5;
 console.log(margarita.getIngridients())
 
+//homework
+//прототип
+var vegeterianPizzaPrototype = Object.create(pizzaPrototype);
+//prorotype Beverage(напиток)
+//Alcohol                           // Non Alcohol
+//pure  //cocktail 
+var beverageProto = {
+	_name : "some drink",
+	_price : 1,
+	_valume : 50,
+	setName : function(name){
+		this._name = name
+	},
+	setPrice : function(name){
+		this._price = price
+	},
+	setValue : function(name){
+		this._value =value
+	},
+	getName : function(){
+	return this._name
+	},
+	getPrice : function(){
+	return this._price
+	},
+	getValume : function(){
+	return this._valume
+	}
+}
+
+var water = Object.create(beverageProto);
+// water;
+// water.setName(water);
+// water._name;
+var alcoholProto = Object.create(beverageProto);
+
+alcoholProto.setStrength = function(strength){
+	this._strength = strength;
+}
+alcoholProto.getStrength = function(){
+	return this._strength ;
+}
+var tequila = Object.create(alcoholProto);
+tequila.setName("Tequila");
+tequila.setPrice(38);
+
 
 
