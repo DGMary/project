@@ -1,3 +1,4 @@
+
 var actors = [
     {firstName: "Tom", lastName: "Cruise", year: 1962 },
     {firstName: "Jackie", lastName: "Chan", year: 1954 },
